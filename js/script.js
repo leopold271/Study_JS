@@ -1,19 +1,39 @@
 "use strict";
 
-let number = 5;
-const leftBorderWidth = 1;
+let num = 20;
 
-number = 10;
-console.log(number);
+function showFirstMessage(text) {
+   console.log(text);
+   console.log(num);
+}
 
-const obj = {
-   a: 50
+showFirstMessage('Hello world');
+console.log(num);
+
+// function calc(a, b) {
+//    return (a + b);
+//    //unreacheble code
+// }
+
+// console.log(calc(42, 6));
+// console.log(calc(23, 2));
+// console.log(calc(411, 124));
+
+function ret() {
+   num = 50;
+
+   // some code
+
+   return num;
+}
+
+const anotheNum = ret();
+console.log(anotheNum);
+
+const logger = function () {
+   console.log('hello');
 };
 
-obj.a = 10;
+logger();
 
-console.log(obj);
-
-
-console.log(name);
-var name = 'Ivan';
+const calc = (a, b) => a + b;
